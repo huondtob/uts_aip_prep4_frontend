@@ -59,16 +59,20 @@ class MovieForm extends Component {
             name="title"
             type="text"
             value={this.state.title}
-            onChange={this.handleInputChange} />
+            onChange={this.handleInputChange}
+            required
+            placeholder="Enter a valid movie title" />
         </label>
         <br />
         <label>
           Release date:
           <input
             name="releaseDate"
-            type="text"
+            type="date"
             value={this.state.releaseDate}
-            onChange={this.handleInputChange} />
+            onChange={this.handleInputChange}
+            required
+            placeholder="Enter a valid release date"/>
         </label>
         <br />
         <label>
@@ -77,7 +81,9 @@ class MovieForm extends Component {
             name="duration"
             type="number"
             value={this.state.duration}
-            onChange={this.handleInputChange} />
+            onChange={this.handleInputChange}
+            required
+            placeholder="Enter a valid duration"/>
         </label>
         <br />
         <label>
@@ -86,7 +92,9 @@ class MovieForm extends Component {
             name="genre"
             type="text"
             value={this.state.genre}
-            onChange={this.handleInputChange} />
+            onChange={this.handleInputChange}
+            required
+            placeholder="Enter a valid genre"/>
         </label>
         <br />
         <label>
@@ -95,7 +103,9 @@ class MovieForm extends Component {
             name="synopsis"
             type="text"
             value={this.state.synopsis}
-            onChange={this.handleInputChange} />
+            onChange={this.handleInputChange}
+            required
+            placeholder="Enter a valid email synopsis"/>
         </label>
         <br />
         <input type="submit" value="Submit" />
