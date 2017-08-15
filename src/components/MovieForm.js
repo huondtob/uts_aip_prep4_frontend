@@ -1,7 +1,6 @@
-var React = require('react');
-var ReactDom = require('react-dom');
+import React, { Component } from 'react';
 
-class MovieList extends React.Component {
+class MovieForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -17,8 +16,8 @@ class MovieList extends React.Component {
   }
 
   componentDidMount() {
-    var that = this;
-    var url = 'http://localhost:3001'
+    const that = this;
+    const url = 'http://localhost:3001';
 
     fetch(url)
       .then(function(response) {
@@ -40,8 +39,8 @@ class MovieList extends React.Component {
   }
 
   handleSubmit(event) {
-    var url = 'http://localhost:3001'
-    var that = this;
+    const url = 'http://localhost:3001'
+    const that = this;
 
     event.preventDefault();
     fetch(url, {
@@ -105,4 +104,4 @@ class MovieList extends React.Component {
   }
 }
 
-module.exports = MovieList
+export default MovieForm;

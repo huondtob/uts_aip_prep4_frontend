@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
-//Module requires
-var MovieList = require('./components/MovieList')
+import MovieForm from './components/MovieForm';
 
 class App extends Component {
   render() {
@@ -16,7 +14,7 @@ class App extends Component {
         <p className="App-intro">
             <b>This is a very serious project assignment.</b><br></br><br></br>
         </p>
-        <MovieList />
+        <MovieForm />
       </div>
     );
   }
